@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nkVNTiV7YUKNDaz02VPLdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/dynamodbv2/home?region=eu-west-1#item-explorer?index=parent_id-index&amp;operation=QUERY&amp;table=product" CvElementArea="1736, 726, 19, 24" CvType="ArrowButton" DesignTimeRectangle="1736, 727, 20, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aria-label='Next page' class='awsui_arrow_fvjdu_1rtso_141 awsui_button_fvjdu_1rtso_113' tag='BUTTON' type='button' aaname='' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next page' class='awsui_arrow_fvjdu_1rtso_141 awsui_button_fvjdu_1rtso_113' tag='BUTTON' type='button' aaname='' /&gt;" Guid="c38954a0-eeca-45a9-a91b-33cecd8e27d5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Items | Amazon DynamoDB Management Console | DynamoDB | eu-west-1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="78d54ec2110b1d8d1c9754970a18ec1f.png" xmlns="">0alNgF4wCnUKmgdtfjk9YLA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">InjectJsScript</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

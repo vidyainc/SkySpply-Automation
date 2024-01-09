@@ -1,0 +1,14 @@
+﻿{
+  "Name": "AnyScreen",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "pL2vq8yFMEa4O-iED4kGtw",
+  "Reference": "mvqC_4KT5UyrWB6OcM-csg/pL2vq8yFMEa4O-iED4kGtw",
+  "ParentRef": "mvqC_4KT5UyrWB6OcM-csg/9g07X0R75UyQn-XQB8fsDw",
+  "Created": "2024-01-09T02:48:44.5818177Z",
+  "Updated": "2024-01-09T02:48:44.5818177Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
