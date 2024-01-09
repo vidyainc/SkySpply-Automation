@@ -1,0 +1,266 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExportAsCSV" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,3656" sap2010:WorkflowViewState.IdRef="ExportAsCSV_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExportAsCSV" sap:VirtualizedContainerService.HintSize="756,3591" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="finalFileName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="TableScreen" sap:VirtualizedContainerService.HintSize="694,3480" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="660,3263" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="baseFileName" />
+              <Variable x:TypeArguments="x:Int32" Name="counter" />
+              <Variable x:TypeArguments="x:String" Name="directoryPath" />
+              <Variable x:TypeArguments="x:String" Name="filePath" />
+              <Variable x:TypeArguments="x:Boolean" Name="isFirstFilePathExist" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item - Save results to csv" sap:VirtualizedContainerService.HintSize="598,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Download results to CSV" ScopeIdentifier="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="5">
+                  <x:String>Edit item</x:String>
+                  <x:String>Duplicate item</x:String>
+                  <x:String>Delete items</x:String>
+                  <x:String>Download selected items to CSV</x:String>
+                  <x:String>Download results to CSV</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://eu-west-1.console.aws.amazon.com/dynamodbv2/home?region=eu-west-1#item-explorer?operation=SCAN&amp;table=product" CvTextArea="1604, 866, 53, 13" CvTextArgument="Actions" CvType="Text" DesignTimeRectangle="1585, 579, 113, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Actions'" FullSelectorArgument="&lt;webctrl id='awsui-button-dropdown__trigger:r27:' tag='BUTTON' innertext='Actions' /&gt;" FuzzySelectorArgument="&lt;webctrl id='awsui-button-dropdown__trigger:r27:' tag='BUTTON' innertext='Actions' type='button' class='awsui_trigger-button_sne0l_9w4lz_164 awsui_test-utils-button-trigger_sne0l_9w4lz_188 awsui_button_vjswe_agudo_101 awsui_variant-normal_vjswe_agudo_130' aaname='Actions' check:text='Actions' /&gt;" Guid="b4d89668-c19f-4e3d-8582-25467c889cfd" ImageBase64="" InformativeScreenshot="982f54939860e3a3e0652cbf321faa2d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Items | Amazon DynamoDB Management Console | DynamoDB | eu-west-1' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="598,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[baseFileName]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">["product_aws"]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[directoryPath]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">["C:\Users\exoex\Downloads\"]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[directoryPath + baseFileName]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - First file already exist" Exists="[isFirstFilePathExist]" sap:VirtualizedContainerService.HintSize="598,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[filePath + &quot;.csv&quot;]" PathType="File" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="598,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;First file already exist : &quot; + isFirstFilePathExist.ToString]" />
+            <If Condition="[isFirstFilePathExist]" sap:VirtualizedContainerService.HintSize="598,1909" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="564,1375" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Boolean" Name="isRestFileExist" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking rest file already exist or not" Exists="[isRestFileExist]" sap:VirtualizedContainerService.HintSize="522,115" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[directoryPath + baseFileName + &quot; &quot; + counter.ToString() + &quot;.csv&quot;]" PathType="File" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Rest file already exist [&quot; + counter.ToString() +  &quot;]: &quot; + isRestFileExist.ToString]" />
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="522,644" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile.Body>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,508" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="446,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking again rest file already exist or not" Exists="[isRestFileExist]" sap:VirtualizedContainerService.HintSize="446,115" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="[directoryPath + baseFileName + &quot; &quot; + counter.ToString() + &quot;.csv&quot;]" PathType="File" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="446,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Rest file already exist again [&quot; + counter.ToString() +  &quot;]: &quot; + isRestFileExist.ToString]" />
+                      </Sequence>
+                    </ui:InterruptibleWhile.Body>
+                    <ui:InterruptibleWhile.Condition>
+                      <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="isRestFileExist" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                    </ui:InterruptibleWhile.Condition>
+                  </ui:InterruptibleWhile>
+                  <Assign sap:VirtualizedContainerService.HintSize="522,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[finalFileName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[baseFileName + " " + counter.ToString() + ".csv"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Final File Name : &quot; + finalFileName]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,352" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[finalFileName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[baseFileName + ".csv"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Final File Name : &quot; + finalFileName]" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into - Rename File" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="586,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Text="[finalFileName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvElementArea="131, 509, 817, 25" CvType="InputBox" DesignTimeRectangle="136, 513, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'results (2).csv'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzyAccuracy="0.71" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="22c66f32-160e-412e-892d-d7b86896d1df" InformativeScreenshot="b8f17d113229d1f025c828cf0eb95627.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Save" sap:VirtualizedContainerService.HintSize="586,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="746, 578, 89, 26" CvTextArea="777, 584, 27, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="747, 578, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' aaname='Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' aaname='Save' check:text='unchecked' /&gt;" Guid="d92de9be-23b8-4f3a-8983-0cad943f0e0c" InformativeScreenshot="2f8d58c545b724f5d11b38c47d08e896.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="KUrZ7Iwls0u5RmyiEgmNJw" IconBase64="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" InformativeScreenshot="2b011ac3605396c44c013b17fdf22e5c.jpg" Reference="-HYUSZY0KUCnhDAW_Z6fbA/I7qrGFG4ZkWCMPFIA1EiHQ" Selector="&lt;html app='chrome.exe' title='Items | Amazon DynamoDB Management Console | DynamoDB | eu-west-1' /&gt;" Title="Items | Amazon DynamoDB Management Console | DynamoDB | eu-west-1" Url="https://eu-west-1.console.aws.amazon.com/dynamodbv2/home?region=eu-west-1#item-explorer?index=parent_id-index&amp;operation=QUERY&amp;table=product" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
