@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J8M4bRvtOUipzlSx1AOfbw" Reference="mvqC_4KT5UyrWB6OcM-csg/SI1lkaT4R0uZKzHt-QK5qQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy?api=u7aiccv81d&amp;region=eu-west-1" CvTextArea="1026, 530, 124, 17" CvTextArgument="No resource policy" CvType="Text" DesignTimeRectangle="1027, 567, 122, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'No resource policy'" FullSelectorArgument="&lt;webctrl tag='STRONG' aaname='No resource policy' /&gt;" FuzzyAccuracy="0.88" FuzzySelectorArgument="&lt;webctrl tag='STRONG' aaname='No resource policy' type='' class='' /&gt;" Guid="03c78a67-6250-4699-a516-a3dc1eb4cd1d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="27625f706cc7b92fb1f4622866b1db3c.png" xmlns="">0XcrF9uO250aqrVDe_4evlg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

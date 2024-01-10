@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-oj-JBunTk2hhAnq95L30g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy/?api=u7aiccv81d&amp;region=eu-west-1" CvTextArea="322, 235, 400, 17" CvTextArgument="Successfully updated resource policy for 'prod-bovenstad-api'." CvType="Text" DesignTimeRectangle="288, 219, 1583, 48" DesignTimeScaleFactor="1" FriendlyName="'Successfully updated'" FullSelectorArgument="&lt;webctrl parentid='flashbar*' tag='DIV' /&gt;" FuzzyAccuracy="0.93" FuzzySelectorArgument="&lt;webctrl parentid='flashbar*' tag='DIV' type='' class='awsui_flash_1q84n_z45m5_93 awsui_flash-type-success_1q84n_z45m5_866 awsui_flash-with-motion_1q84n_z45m5_93 awsui-context-flashbar' aaname='' check:innerText='Successfully updated resource policy for &amp;apos;prod-bovenstad-api&amp;apos;.' /&gt;" Guid="6ef465a5-b048-4e49-8594-15c78fa53e3b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c9fc7ad4ec2cb1fbb3a56955716ecc24.png" xmlns="">0RB_3bhlwE0OMvtFK641s-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

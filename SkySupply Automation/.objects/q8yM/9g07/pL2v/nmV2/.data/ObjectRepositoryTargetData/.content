@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9Xgj5YGSrEO_HNovJ3-GQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy/?api=u7aiccv81d&amp;region=eu-west-1" CvTextArea="39, 468, 65, 13" CvTextArgument="Resources" CvType="Text" DesignTimeRectangle="40, 466, 63, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Resources'" FullSelectorArgument="&lt;webctrl parentid='2*' tag='A' aaname='Resources' class='awsui_link_l0dv0_vd309_214' /&gt;" FuzzyAccuracy="0.96" FuzzySelectorArgument="&lt;webctrl parentid='2*' tag='A' aaname='Resources' class='awsui_link_l0dv0_vd309_214' type='' check:text='Resources' /&gt;" Guid="3e883cf5-5f2a-4243-8c45-917e9ee9f886" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="39, 468, 65, 13" CvTextArgument="Resources" CvType="Text" DesignTimeRectangle="40, 464, 216, 22" ElementType="ListItem" FriendlyName="'Resources'" FullSelectorArgument="&lt;webctrl parentid='2-1704874089705-6677' tag='LI' /&gt;" FuzzyAccuracy="0.79" FuzzySelectorArgument="&lt;webctrl parentid='2*' tag='LI' type='' class='awsui_list-item_l0dv0_vd309_167' aaname='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ac042b8d5aeed0c8452876e2714272a2.png" xmlns="">0DJdrwksQZUqQLKPV0JElBg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="zDsPbigmiUqTwZJEIgb5vw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="OSWaXH92vEOdVaTJyWKA6w" Reference="mvqC_4KT5UyrWB6OcM-csg/zKxYKp27YEaTNWL4bbURxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy/edit?api=u7aiccv81d&amp;region=eu-west-1" DesignTimeRectangle="398, 576, 1412, 520" DesignTimeScaleFactor="1" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl class='ace_content' parentid='190-1704858307332-5055' tag='DIV' /&gt;" FuzzyAccuracy="0.89" FuzzySelectorArgument="&lt;webctrl class='ace_content' parentid='190-1704858307332-5055' tag='DIV' type='' aaname='' /&gt;" Guid="f6c4330e-2713-4108-b10e-c0552f5fdb4e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Edit resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="0e2173995b5f277dd1636b02084e5e40.png" xmlns="">00BbQvF5HLEGvC8Gd9xml3A</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy/edit?api=u7aiccv81d&amp;region=eu-west-1" DesignTimeRectangle="406, 566, 1387, 520" DesignTimeScaleFactor="1" FriendlyName="'{ &quot;Version&quot;:'" FullSelectorArgument="&lt;webctrl class='ace_content' tag='DIV' /&gt;" FuzzyAccuracy="0.91" FuzzySelectorArgument="&lt;webctrl class='ace_content' tag='DIV' type='' aaname='' /&gt;" Guid="f6c4330e-2713-4108-b10e-c0552f5fdb4e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Edit resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="372, 568, 11, 13" CvTextArgument="1" CvType="Text" DesignTimeRectangle="349, 566, 57, 20" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl aaname='1' tag='DIV' class='ace_gutter-cell ace_gutter-active-line ' /&gt;" FuzzyAccuracy="0.93" FuzzySelectorArgument="&lt;webctrl aaname='1' tag='DIV' class='ace_gutter-cell ace_gutter-active-line ' type='' check:text='1' /&gt;" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0c8053bdca1224661ac6b16f90425299.png" xmlns="">0oeJZMY-USEm962UZxYcXMQ</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">TypeInto</x:String>
+    <x:String x:Key="ActivityType">None</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

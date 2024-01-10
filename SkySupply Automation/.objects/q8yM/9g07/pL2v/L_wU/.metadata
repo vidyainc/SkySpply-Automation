@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Input_ResourcePolicy",
+  "Name": "Button_Edit",
   "Type": "Element",
-  "TaxonomyType": "Element",
-  "Id": "zKxYKp27YEaTNWL4bbURxA",
-  "Reference": "mvqC_4KT5UyrWB6OcM-csg/zKxYKp27YEaTNWL4bbURxA",
+  "TaxonomyType": "Button",
+  "Id": "L_wURRVSjUm7HTTA0d5LfA",
+  "Reference": "mvqC_4KT5UyrWB6OcM-csg/L_wURRVSjUm7HTTA0d5LfA",
   "ParentRef": "mvqC_4KT5UyrWB6OcM-csg/pL2vq8yFMEa4O-iED4kGtw",
-  "Created": "2024-01-10T05:45:12.0031888Z",
-  "Updated": "2024-01-10T09:09:38.1586048Z",
+  "Created": "2024-01-10T09:30:10.8211726Z",
+  "Updated": "2024-01-10T09:31:23.0753829Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=23.10.7.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"

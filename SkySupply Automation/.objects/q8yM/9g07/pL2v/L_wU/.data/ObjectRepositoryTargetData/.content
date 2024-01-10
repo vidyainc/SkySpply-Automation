@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zjmQbdfaG0idlSx2FO75Yw" Reference="mvqC_4KT5UyrWB6OcM-csg/L_wURRVSjUm7HTTA0d5LfA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy?api=u7aiccv81d&amp;region=eu-west-1" CvElementArea="1740, 451, 72, 34" CvTextArea="1762, 461, 29, 13" CvTextArgument="Edit" CvType="Button" DesignTimeRectangle="1742, 402, 69, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Edit'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Edit' class='awsui_button_vjswe_1im18_101 awsui_variant-normal_vjswe_1im18_130' /&gt;" FuzzyAccuracy="0.97" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Edit' class='awsui_button_vjswe_1im18_101 awsui_variant-normal_vjswe_1im18_130' check:text='Edit' /&gt;" Guid="790a4ec5-124a-4894-a2e7-bfba08620414" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8580dda2e9a6968c5b6f53afa031ad97.png" xmlns="">0vvyS_FvMOESyVleClYxfyQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

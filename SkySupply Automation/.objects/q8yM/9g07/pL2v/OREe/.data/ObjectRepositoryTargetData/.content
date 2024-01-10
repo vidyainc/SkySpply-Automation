@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="L4dh5FbST0OyMLIh0YzvFg" Reference="mvqC_4KT5UyrWB6OcM-csg/OREe7dDAn0yWp08lGrzalw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resource-policy/edit?api=u7aiccv81d&amp;region=eu-west-1" CvElementArea="1697, 1076, 134, 35" CvTextArea="1718, 1085, 93, 17" CvTextArgument="Save changes" CvType="Button" DesignTimeRectangle="1698, 1077, 133, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save changes'" FullSelectorArgument="&lt;webctrl aaname='Save changes' parentid='app' tag='BUTTON' type='submit' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname='Save changes' parentid='app' tag='BUTTON' type='submit' class='awsui_button_vjswe_1im18_101 awsui_variant-primary_vjswe_1im18_214' check:innerText='Save changes' /&gt;" Guid="f2d55802-2b06-41e2-9916-b4afd51d57e4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Edit resource policy' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="1697, 1076, 134, 35" CvTextArea="1718, 1085, 93, 17" CvTextArgument="Save changes" CvType="Button" DesignTimeRectangle="1719, 1084, 91, 18" ElementType="Text" FriendlyName="'Save changes'" FullSelectorArgument="&lt;webctrl aaname='Save changes' parentid='app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save changes' parentid='app' tag='SPAN' type='' class='awsui_content_vjswe_1im18_97' check:innerText='Save changes' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5308677d06fdc1633174cb1c739dfe37.png" xmlns="">0Xijrl0rxVU2EGYmhXSBA5Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

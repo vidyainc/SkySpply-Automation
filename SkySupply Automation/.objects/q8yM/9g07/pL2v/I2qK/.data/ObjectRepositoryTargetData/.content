@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UvLFBANkE0GLc4yFdy3svA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://eu-west-1.console.aws.amazon.com/apigateway/main/apis/u7aiccv81d/resources?api=u7aiccv81d&amp;region=eu-west-1" CvTextArea="696, 640, 87, 16" CvTextArgument="Select a stage" CvType="Text" DesignTimeRectangle="688, 631, 560, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Select a stage'" FullSelectorArgument="&lt;webctrl id='formField336*' tag='BUTTON' /&gt;" FuzzyAccuracy="0.91" FuzzySelectorArgument="&lt;webctrl id='formField336-1704874492423-6874' tag='BUTTON' type='button' class='awsui_button-trigger_18eso_ttudq_97 awsui_has-caret_18eso_ttudq_137' aaname='Select a stage' /&gt;" Guid="a16d03f0-1fd9-4676-9f79-1353ecf4a143" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='API Gateway - Resources' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CvElementArea="686, 629, 561, 35" CvType="InputBox" DesignTimeRectangle="697, 636, 85, 22" ElementType="Text" FriendlyName="'Select a stage'" FullSelectorArgument="&lt;webctrl id='trigger-content-344-1704874492423-4848' tag='SPAN' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl id='trigger-content-344-1704874492423-4848' tag='SPAN' type='' class='awsui_placeholder_dwuol_gply9_93 awsui_trigger_dwuol_gply9_116' aaname='Select a stage' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f4586260544f0fab4f28c5126875066c.png" xmlns="">0UecgeXbCzkW11zlKUauHAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
