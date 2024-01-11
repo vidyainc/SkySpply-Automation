@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="IP_Whitelist_Addition" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1072,896" sap2010:WorkflowViewState.IdRef="IP_Whitelist_Addition_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="IP_Whitelist_Addition" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1072,989" sap2010:WorkflowViewState.IdRef="IP_Whitelist_Addition_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -85,7 +85,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="IP_Whitelist_ADDITION" sap:VirtualizedContainerService.HintSize="450,831" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="IP_Whitelist_ADDITION" sap:VirtualizedContainerService.HintSize="450,924" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtIPAddresses" />
       <Variable x:TypeArguments="x:String" Name="Str_dtIPAddress" />
@@ -95,29 +95,38 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IP Whitelist Addition-Exclusion in WAF&amp;Shield\ADD_IP Whitelist - WAF&amp;Shield.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in WAF&amp;Shield\ADD_IP Whitelist - WAF&amp;Shield.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Invoke ADD_IP Whitelist workflow" DisplayName="IP Whitelist Addition-Exclusion in WAF&amp;Shield\ADD_IP Whitelist - WAF&amp;Shield.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in WAF&amp;Shield\ADD_IP Whitelist - WAF&amp;Shield.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument" />
-        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtIPAddresses">
-          <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtIPAddresses" />
-        </OutArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtIPAddresses">[dtIPAddresses]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:OutputDataTable DataTable="[dtIPAddresses]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[Str_dtIPAddress]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[Str_dtIPAddress]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\bovenstad - API Gateway_Resource Policy Menu.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\bovenstad - API Gateway_Resource Policy Menu.xaml">
+    <ui:OutputDataTable DataTable="[dtIPAddresses]" DisplayName="Output Data Table - Convert DataTable to String" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[Str_dtIPAddress]" />
+    <ui:LogMessage DisplayName="Log Message - Print DataTable" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[Str_dtIPAddress]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="BOVENSTAD" DisplayName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\bovenstad - API Gateway_Resource Policy Menu.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\bovenstad - API Gateway_Resource Policy Menu.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtIPAddresses">
-          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtIPAddresses" />
-        </InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtIPAddresses">[dtIPAddresses]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\productsapi - API Gateway_Resource Policy Menu.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\productsapi - API Gateway_Resource Policy Menu.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="PRODUCTSAPI" DisplayName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\productsapi - API Gateway_Resource Policy Menu.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in API Gateway (Resource Policy Menu)\productsapi - API Gateway_Resource Policy Menu.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtIPAddresses">
-          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtIPAddresses" />
-        </InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtIPAddresses">[dtIPAddresses]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
   </Sequence>
 </Activity>

@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1072,1307</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1072,1360</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>IP_Whitelist_Addition_Exclution_in_WAF_Shield_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,19 +114,19 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Go To Link and Extract Table" sap:VirtualizedContainerService.HintSize="592,1242" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Go To WAF&amp;Shield and Extract Table" sap:VirtualizedContainerService.HintSize="592,1295" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="AnyScreen" sap:VirtualizedContainerService.HintSize="530,1131" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="AnyScreen" sap:VirtualizedContainerService.HintSize="530,1184" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,914" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,967" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dtIPAddresses" />
               <Variable x:TypeArguments="x:String" Default="103.225.149.222/32" Name="ourIPAddress" />
@@ -137,8 +137,8 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://us-east-1.console.aws.amazon.com/wafv2/homev2/ip-sets?region=us-east-1" Version="V3" />
-            <uix:NSelectItem DelayAfter="1" DelayBefore="1" DisplayName="Select Item - Europe (Ireland)" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[ipRegion]" ScopeIdentifier="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V3">
+            <uix:NGoToUrl DisplayName="Go To URL - Go To WAF&amp;Shield" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://us-east-1.console.aws.amazon.com/wafv2/homev2/ip-sets?region=us-east-1" Version="V3" />
+            <uix:NSelectItem DelayAfter="1" DelayBefore="1" DisplayName="Select Item - Europe (Ireland)" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[ipRegion]" ScopeIdentifier="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="18">
                   <x:String>Global (CloudFront)</x:String>
@@ -171,23 +171,28 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'SkySupplyWhitelist'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'SkySupplyWhitelist'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://us-east-1.console.aws.amazon.com/wafv2/homev2/ip-sets?region=eu-west-1#/" CvTextArea="341, 534, 125, 17" CvTextArgument="SkySupplyWhitelist" CvType="Text" DesignTimeRectangle="342, 533, 123, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'SkySupplyWhitelist'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='link-self50-1704771118674-9816' type='' tag='A' class='awsui_link_4c84z_h59ew_93 awsui_variant-primary_4c84z_h59ew_175 awsui_font-size-body-m_4c84z_h59ew_401' aaname='SkySupplyWhitelist' /&gt;" FuzzyAccuracy="0.81" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='link-self50-1704771118674-9816' type='' tag='A' class='awsui_link_4c84z_h59ew_93 awsui_variant-primary_4c84z_h59ew_175 awsui_font-size-body-m_4c84z_h59ew_401' aaname='SkySupplyWhitelist' check:innerText='SkySupplyWhitelist' /&gt;" Guid="5a23d17b-4c8a-4cff-9aff-178dac30a6af" InformativeScreenshot="33fc4bf3a86d3ff2ff8d1272d0054499.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WAF &amp;amp; Shield | Global' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtIPAddresses]" DelayAfter="1" DelayBefore="1" DisplayName="Extract Table Data - Extract List IP" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='IP addresses' ReferenceName='IP addresses' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='IP addresses' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V3">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtIPAddresses]" DelayAfter="1" DelayBefore="1" DisplayName="Extract Table Data - Extract List IP into DataTable" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='IP addresses' ReferenceName='IP addresses' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='IP addresses' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V3">
               <uix:NExtractData.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="268, 692, 1580, 239" DesignTimeScaleFactor="1" FriendlyName="'IP addresses 217.100.26…'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="8b5b4271-9947-481a-b47c-a85162b84bd8" InformativeScreenshot="c6a5a63089c03adfb2b1ceaab68aca1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IP set | WAF &amp;amp; Shield | Global' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign sap2010:Annotation.AnnotationText="Find the index of the first row in 'dtIPAddresses' where 'IP Addresses' column matches 'ourIPAddress'. Returns the row index if found; otherwise, returns -1" DisplayName="Assign - Find Index that match 'ourIPAddress' variable" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[out_RowIndex]</OutArgument>
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:Int32">[dtIPAddresses.AsEnumerable().Select(Function(r, index) New With {.Row = r, .Index = index}).Where(Function(x) x.Row("IP Addresses").ToString.Equals(ourIPAddress)).Select(Function(x) x.Index).DefaultIfEmpty(-1).First()]</InArgument>
               </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </Assign>
           </Sequence>
         </ActivityAction>

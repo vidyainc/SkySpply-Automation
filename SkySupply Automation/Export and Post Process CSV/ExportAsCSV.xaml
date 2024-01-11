@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExportAsCSV" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,3656" sap2010:WorkflowViewState.IdRef="ExportAsCSV_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExportAsCSV" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1072,3657" sap2010:WorkflowViewState.IdRef="ExportAsCSV_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -96,7 +96,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExportAsCSV" sap:VirtualizedContainerService.HintSize="756,3591" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExportAsCSV" sap:VirtualizedContainerService.HintSize="756,3592" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="finalFileName" />
     </Sequence.Variables>
@@ -105,13 +105,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="TableScreen" sap:VirtualizedContainerService.HintSize="694,3480" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="TableScreen" sap:VirtualizedContainerService.HintSize="694,3481" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="660,3263" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="660,3264" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="baseFileName" />
               <Variable x:TypeArguments="x:Int32" Name="counter" />
@@ -176,9 +176,9 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - First file already exist" Exists="[isFirstFilePathExist]" sap:VirtualizedContainerService.HintSize="598,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[filePath + &quot;.csv&quot;]" PathType="File" />
+            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking first file already exist or not" Exists="[isFirstFilePathExist]" sap:VirtualizedContainerService.HintSize="598,115" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[filePath + &quot;.csv&quot;]" PathType="File" />
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="598,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;First file already exist : &quot; + isFirstFilePathExist.ToString]" />
-            <If Condition="[isFirstFilePathExist]" sap:VirtualizedContainerService.HintSize="598,1909" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[isFirstFilePathExist]" DisplayName="If - First file already exist" sap:VirtualizedContainerService.HintSize="598,1910" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="564,1375" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <Sequence.Variables>
@@ -189,9 +189,9 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking rest file already exist or not" Exists="[isRestFileExist]" sap:VirtualizedContainerService.HintSize="522,115" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[directoryPath + baseFileName + &quot; &quot; + counter.ToString() + &quot;.csv&quot;]" PathType="File" />
+                  <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking REST file already exist or not" Exists="[isRestFileExist]" sap:VirtualizedContainerService.HintSize="522,115" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[directoryPath + baseFileName + &quot; &quot; + counter.ToString() + &quot;.csv&quot;]" PathType="File" />
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Rest file already exist [&quot; + counter.ToString() +  &quot;]: &quot; + isRestFileExist.ToString]" />
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="522,644" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While - Looping while rest file exist" sap:VirtualizedContainerService.HintSize="522,644" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                     <ui:InterruptibleWhile.Body>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,508" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <sap:WorkflowViewStateService.ViewState>
@@ -207,7 +207,7 @@
                             <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking again rest file already exist or not" Exists="[isRestFileExist]" sap:VirtualizedContainerService.HintSize="446,115" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="[directoryPath + baseFileName + &quot; &quot; + counter.ToString() + &quot;.csv&quot;]" PathType="File" />
+                        <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - Checking all rest file already exist or not" Exists="[isRestFileExist]" sap:VirtualizedContainerService.HintSize="446,115" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="[directoryPath + baseFileName + &quot; &quot; + counter.ToString() + &quot;.csv&quot;]" PathType="File" />
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="446,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Rest file already exist again [&quot; + counter.ToString() +  &quot;]: &quot; + isRestFileExist.ToString]" />
                       </Sequence>
                     </ui:InterruptibleWhile.Body>
@@ -215,7 +215,7 @@
                       <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="isRestFileExist" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
                     </ui:InterruptibleWhile.Condition>
                   </ui:InterruptibleWhile>
-                  <Assign sap:VirtualizedContainerService.HintSize="522,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign DisplayName="Assign - Final file name" sap:VirtualizedContainerService.HintSize="522,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[finalFileName]</OutArgument>
                     </Assign.To>
@@ -227,13 +227,13 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="476,352" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence sap:VirtualizedContainerService.HintSize="476,353" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign DisplayName="Assign - Assign base file name" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[finalFileName]</OutArgument>
                     </Assign.To>
@@ -245,7 +245,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into - Rename File" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="586,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Text="[finalFileName]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into - Rename File" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="598,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d05a39f1-4e37-41bf-bdb9-fcbb6b4dd3a9" Text="[finalFileName]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable CvElementArea="131, 509, 817, 25" CvType="InputBox" DesignTimeRectangle="136, 513, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'results (2).csv'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzyAccuracy="0.71" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="22c66f32-160e-412e-892d-d7b86896d1df" InformativeScreenshot="b8f17d113229d1f025c828cf0eb95627.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NTypeInto.Target>
