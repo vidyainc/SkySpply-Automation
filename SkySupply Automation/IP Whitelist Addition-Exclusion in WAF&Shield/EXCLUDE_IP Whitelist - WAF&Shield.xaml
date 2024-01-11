@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1072,3429</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1072,3427</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>IP_Whitelist_Addition_Exclution_in_WAF_Shield_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -116,7 +116,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EXCLUDE_IPWhitelist_WAF&amp;Shield" sap:VirtualizedContainerService.HintSize="728,3364" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EXCLUDE_IPWhitelist_WAF&amp;Shield" sap:VirtualizedContainerService.HintSize="728,3362" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
     </Sequence.Variables>
@@ -125,13 +125,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="AnyScreen" sap:VirtualizedContainerService.HintSize="666,3253" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="AnyScreen" sap:VirtualizedContainerService.HintSize="666,3251" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="f94f545c-f484-4fdb-a765-d3a4c9ae8f8e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="632,3036" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="632,3034" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
               <Variable x:TypeArguments="sd:DataTable" Name="dtIPAddresses" />
@@ -143,10 +143,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IP Whitelist Addition-Exclution in WAF&amp;Shield\GoToLink&amp;ExtractTable.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="570,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclution in WAF&amp;Shield\GoToLink&amp;ExtractTable.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IP Whitelist Addition-Exclusion in WAF&amp;Shield\GoToLink&amp;ExtractTable.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="570,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="IP Whitelist Addition-Exclusion in WAF&amp;Shield\GoToLink&amp;ExtractTable.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument" />
-                <OutArgument x:TypeArguments="x:Int32" x:Key="out_RowIndex">[rowIndex]</OutArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_RowIndex">
+                  <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="rowIndex" />
+                </OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <If Condition="[rowIndex &lt;&gt; -1]" DisplayName="If -Checking rowIndex not -1" sap:VirtualizedContainerService.HintSize="570,2768" sap2010:WorkflowViewState.IdRef="If_1">
